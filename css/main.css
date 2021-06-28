@@ -182,3 +182,95 @@ section.contents .main-text p span {
     font-weight: 400;
     color: #999;
 }
+
+/* section.contents > project : style */
+section.contents .project {
+    color: #fff;
+}
+section.contents .project .top {
+    /* background: tomato; */
+    width: 1170px;
+    margin: 130px auto 60px;
+    display: flex;
+    justify-content: space-between;
+}
+section.contents .project .top h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+section.contents .project .top a {
+    display: block;
+    font-size: 18px;
+}
+section.contents .project .top a span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+section.contents .project ul {
+    display: flex;
+    /* 동일한 간격으로 정렬 */
+    justify-content: space-evenly;
+}
+section.contents .project ul li {
+    height: 400px;
+    /* name클래스 영역 고정 */
+    position: relative;
+
+}
+section.contents .project ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section.contents .project ul li a img {
+    width: 100%;
+    height: 100%;
+}
+section.contents .project ul li a .name {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #1b1b1b;
+    padding: 15px;
+    width: 250px;
+    text-align: right;
+    font-size: 22px;
+    box-sizing: border-box;
+
+    opacity: 0;
+}
+section.contents .project ul li a:hover .name {
+    opacity: 1;
+    animation: rise-up 1s;
+}
+@keyframes rise-up {
+    0% {
+        opacity: 0;
+        bottom: -10%;
+    }
+    100% {
+        opacity: 1;
+        bottom: 10px;
+    }
+}
+
+section.contents .project ul li a .name span {
+    font-size: 15px;
+    font-weight: 700;
+}
+section.contents .project ul li a .name h3 {
+    text-transform: uppercase;
+}
+
+section.contents .project ul li a::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: rgba(27,27,27, .9);
+    position: absolute;
+    transition: 0.6s;
+}
+section.contents .project ul li a:hover::before {
+    width: 100%;
+}
