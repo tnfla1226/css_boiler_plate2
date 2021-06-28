@@ -134,6 +134,7 @@ section.contents {
     background: #1b1b1b;
     padding: 120px 0;
 }
+/* //end section contents */
 
 /* section contents > .main-text */
 section.contents .main-text {
@@ -182,6 +183,7 @@ section.contents .main-text p span {
     font-weight: 400;
     color: #999;
 }
+/* //end section contents > .main-text */
 
 /* section.contents > project : style */
 section.contents .project {
@@ -274,3 +276,95 @@ section.contents .project ul li a::before {
 section.contents .project ul li a:hover::before {
     width: 100%;
 }
+/* //end section.contents > project : style */
+
+
+/* section.contents > .partner : style */
+section.contents .partner {
+    width: 1170px;
+    margin: 170px auto 100px;
+    color: #fff;
+}
+section.contents .partner h3 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+section.contents .partner ul {
+    /* background: tomato; */
+    display: grid;
+    grid-template-rows: repeat(2,150px);
+    grid-template-columns: repeat(4, 1fr);
+
+    /* 중앙 정렬 */
+    justify-items: center;
+    align-items: center;
+    /* 서로 간격 벌리게 */
+    gap: 10px;
+}
+section.contents .partner ul li img {
+    /* background: red; */
+    opacity: 0.4;
+    transition: 0.3s;
+}
+/* hover는 이미지 말고 박스에 걸기 */
+section.contents .partner ul li:hover img {
+    opacity: 1;
+}
+/* //end section.contents > .partner : style */
+
+/* section.contents .contact : style */
+section.contents .contact {
+    width: 90%;
+    background: url('../img/contact.jpg') no-repeat center/cover fixed;
+    padding: 220px 0;
+    color: #fff;
+}
+section.contents .contact .inner {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.1;
+}
+section.contents .contact .inner h3 {
+    font-weight: 400;
+}
+section.contents .contact .inner .tel {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 50px 0;
+}
+/* //end section.contents .contact : style */
+
+/* footer : style */
+footer {
+    background: #1b1b1b;
+    color: #999;
+    padding: 0 80px 80px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul li:nth-child(2) {
+    color: #eee;
+    font-size: 16px;
+    line-height: 2;
+}
+footer ul li:nth-child(2) span {
+    font-weight: 700;
+    margin-right: 10px;
+    color: #999;
+}
+footer ul li:nth-child(3) {
+    font-weight: 700;
+}
+footer .go-top {
+    color: #fff;
+    font-size: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+}
+/* //end footer : style */
